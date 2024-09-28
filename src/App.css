@@ -1,38 +1,104 @@
-.App {
+main {
+  background-color: #264653;
+  height: 100vh;
+  font-family: "Avenir", sans-serif;
+}
+
+#header-div {
+  width: 60%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #e9c46a;
+  font-size: 40px;
+}
+
+#content-div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+#input-div {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#output-div {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  background-color: #e9c46a;
+  margin: auto;
+  padding: 5px;
+  border: 3px solid #e9c46a;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#error-div {
+  width: 80%;
+  margin: auto;
+  color: #e76f51;
+  font-style: italic;
+  font-size: 18px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-row {}
+
+input[type=text] {
+  width: 70%;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.button {
+  background-color: #2a9d8f;
+  color: white;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 18px;
+  border: 1px solid #2a9d8f;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 5px;
+  /* display: flex; */
+  transition-duration: 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: #297c74;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new-url {
+  /* display: flex; */
+  color: black;
+  padding: 5px;
+  font-size: 24px;
+}
+
+#new-url-label {
+  font-size: 18px;
+  display: flex;
+
+}
+
+.short-url {
+  margin-left: 10px;
+  padding: 1px 0px;
+}
+.or{
+  padding: 20px 20px;
 }
